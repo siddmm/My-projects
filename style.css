@@ -1,77 +1,220 @@
+@import "https://fonts.googleapis.com/css?family=Oswald:500,700";
+@import "https://fonts.googleapis.com/css?family=Montserrat:500,700";
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
+
 body {
-     margin: 0;
-     padding: 0;
-     background: url(pic1.jpg);
-     width: 700px;
-     height: 500px;
-     background-size: cover;
-     background-position: center;
-     font-family: sans-serif;
-  }
-
-  .loginbox {
-      width: 350px;
-      height: 420px;
-      background: red;
-      color: yellow;
-      top: 50%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%,-50%);
-      box-sizing: border-box;   
-     
+    margin: 0;
+    background-color: white;
 }
 
- .avatar {
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
-     position: absolute;
-     top: -25px;
-     left: calc(50% - 50px);
-}
-  
-.loginbox p {
-   margin: 0;
-   Padding: 0;
-   font-weight: bold;
-   color: white;
+header {
+    background: grey;
+    color: blue;
+    padding: 10px 30px 20px 30px;
+    height: 70px;
 }
 
-.loginbox input {
-     width: 100%;
-     margin-bottom: 20px;
+.header h1 {
+                     display: inline;
+                     font-family: 'Times New Roman', sans-serif;
+                     font-weight: 400;
+                     font-size: 50px;
+                     float: left;
+                     color: orange;
+                     margin-top: 0px;
+                     margin-right: 20px;
+                 }
+
+#container {
+
+    position: relative;
+}
+#animate-left {
+    position:absolute;
+}
+
+nav ul {
+    display: inline;
+    padding: 0px;
+    float: left;
+}
+
+.divider {
+    background:yellow;
+    height: 10px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    float: left;
+    margin-left: 180px;
+    margin-top: -15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#nav {
+    font-family:'Montserrat', sans-serif;
+}
+
+.homered:hover {
+    background: red;
+    padding: 10px 12px 10px 10px;
 }
 
 
-input[type=text], input[type=password] {
- border: none;
- border-bottom: 1px solid black;
- background: transparent;
- outline: none;
- height: 20px;
- color: black;
- font-size: 16px;
- width: 200px;
+
+.homeblack:hover {
+    background: blue;
+    padding: 10px 10px 10px 10px;
 }
 
-.loginbox input[type="submit"]
+
+.divider1 {
+    background: yellow;
+    height: 10px;
+}
+
+.divider2 {
+    background: yellow;
+    height: 10px;
+}
+
+.image1 {
+    background-image: url(images/mahabaleshwar-pic.jpg);
+    width: 1496px;
+    height: 670px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.homesub {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 9% 5% 0% 55%;
+    font-size: 20px;
+    color: yellow;
+}
+
+.homedes {
+    font-family: 'Raleway', sans-serif;
+    margin: 0.5% 0% 0% 55%;
+    font-size: 40px;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.homeweb {
+    font-family: 'Oswald', sans-serif;
+    margin: 0% 0% 0% 55%;
+    font-size: 50px;
+    color: navy;
+    display: inline-block;
+}
+
+
+.buttonhome {
+    margin: 0% 0% 0% 55%;
+    background: yellow;
+    color: black;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-size: 1.4em;
+    padding: 0.1em;
+    coursor: pointer;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.buttonhome:hover {
+    background:grey;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 300px;
+}
+
+.pcolor {
+    color: red;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    margin-right: 20px;
+}
+
+.contact-color {
+    display: inline-block;
+    color: blue;
+    font-size: 25px;
+    margin-right: 215px;
+    margin-bottom: 50px;
+}
+
+.fname-color {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.lname-color {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.E-color {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.Add-color {
+    color: black;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: yellow;
+    margin-bottom: 30px;
+
+}
+
+textarea[name="message"] {
+    margin: 0px 0px 0px 150px;
+}
+
+input[type="submit"]:hover
 {
-  border: none;
-  outline: none;
-  height: 20px;
-  background: red;
-  color: black;
-  font-size: 50px;
-}  
-.loginbox input[type="submit"]:hover
-{
- background: red;
- color: black;
+    color:grey;
 }
-.loginbox a {
-  text-declaration: none;
-  font-size: 16px;
-  font-weight: bold;
-  color: darkgrey;
+
+.divider1 {
+    background: black;
+    height: 80px;
 }
+
